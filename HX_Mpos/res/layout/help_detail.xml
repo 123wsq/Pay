@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical" >
+    <RelativeLayout android:background="@drawable/title_bar_reg" android:layout_width="fill_parent" android:layout_height="@dimen/reg_title_height">
+        <Button android:textSize="@dimen/medium" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/btn_back" android:background="@drawable/selector_reg_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="帮助详情" />
+        
+    </RelativeLayout>
+	 <LinearLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:orientation="vertical">
+        <TextView
+             android:id="@+id/help_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="商户收款"
+            android:textStyle="bold" />
+        <View android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip"/>
+	     <ExpandableListView
+	        android:id="@+id/help_detail_expandablelistview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    </ExpandableListView>
+	     
+	 </LinearLayout>
+</LinearLayout>

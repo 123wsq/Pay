@@ -1,0 +1,82 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+
+#在proguard中 强制使所有混淆失效
+#-dontobfuscate
+#-dontoptimize
+
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/base64.jar
+-libraryjars libs/emvswipeapi-android-2.10.3.jar
+-libraryjars libs/gson-2.2.4.jar
+-libraryjars libs/nineoldandroids-2.4.0.jar
+-libraryjars libs/reader_landicorp_1.0.5.jar
+-libraryjars libs/sunjce_provider.jar
+-libraryjars libs/universal-image-loader-1.9.3.jar
+-libraryjars libs/jackson-core-asl-1.9.13.jar
+-libraryjars libs/jackson-mapper-asl-1.9.13.jar
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class com.lk.td.pay.beans.** { *; }
+-keep public class com.lk.td.pay.wedget.** { *; }
+-keep public class org.codehaus.jackson.** { *; }
+-keep class com.google.gson.** { *; }
+-keep interface com.google.gson.** { *; }
+-keep class com.tools.base64.** { *; }
+-keep interface com.tools.base64.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+   public *;
+}
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keep class * implements java.io.Serializable {*;}
+
+-keep class * implements android.os.Parcelable {
+ public static final android.os.Parcelable$Creator *;
+}
+-dontwarn android.support.v4.**
+-dontwarn android.support.v7.**
+-dontwarn com.sun.crypto.provider.**
+-dontwarn com.bbpos.**
+-dontwarn org.codehaus.jackson.**
+

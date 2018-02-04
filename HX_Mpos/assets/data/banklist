@@ -1,0 +1,23 @@
+{
+  "REP_BODY": {
+      "RSPMSG": "查询成功",
+      "RSPCOD": "000000",
+      "BANKLIST":[
+              {"bankName":"工商银行"},
+              {"bankName":"建设银行"},
+              {"bankName":"中国银行"},
+              {"bankName":"交通银行"},
+              {"bankName":"招商银行"},
+              {"bankName":"中信银行"},
+              {"bankName":"光大银行"},
+              {"bankName":"民生银行"},
+              {"bankName":"邮政储蓄银行"},
+              {"bankName":"兴业银行"},
+              {"bankName":"华夏银行"},
+              {"bankName":"平安银行"}
+          ]
+       },
+  "REP_HEAD": {
+      "SIGN": "6ac83551feafd64ebf2b68494fca0a7d"
+    }
+}

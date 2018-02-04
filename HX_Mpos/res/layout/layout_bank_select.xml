@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_bank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/layout_title"></include>
+
+    <LinearLayout
+        android:id="@+id/layout_bank_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout style="@style/style_edit_layout">
+
+            <TextView
+                style="@style/style_text_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="银行类型" />
+
+            <TextView
+                android:id="@+id/txt_bank"
+                style="@style/style_edit_item"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:drawableRight="@drawable/right_arrow_skb"
+                android:hint="请选择银行类型" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/style_edit_layout">
+
+            <TextView
+                style="@style/style_text_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="银行卡" />
+
+            <EditText
+                android:id="@+id/et_cradNo"
+                style="@style/style_edit_item"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:hint="请输入银行卡号" />
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/style_btn"
+            android:layout_marginTop="@dimen/default_height"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/default_margin"
+        >
+
+        <LinearLayout
+            android:id="@+id/pwd_reviselogin"
+            style="@style/style_edit_layout">
+
+            <ImageView
+                style="@style/settings_items_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pic_left_password" />
+
+            <TextView
+                style="@style/settings_items_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right32"
+                android:text="修改登录密码" />
+        </LinearLayout>
+
+        <View
+            style="@style/common_line_horizontal_style"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:id="@+id/pwd_revisepay"
+            style="@style/style_edit_layout">
+
+            <ImageView
+                style="@style/settings_items_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pic_left_password" />
+
+            <TextView
+                style="@style/settings_items_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right32"
+                android:text="修改支付密码" />
+        </LinearLayout>
+
+        <View
+            style="@style/common_line_horizontal_style"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:id="@+id/pwd_findpay"
+            style="@style/style_edit_layout">
+
+            <ImageView
+                style="@style/settings_items_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pic_left_password" />
+
+            <TextView
+                style="@style/settings_items_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/right32"
+                android:text="找回支付密码" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/regBackGround"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:id="@+id/protocol_layout"
+    >
+
+    <include layout="@layout/layout_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_background_reg"
+        android:layout_margin="@dimen/default_margin"
+        android:padding="@dimen/default_margin"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                style="@style/style_text_item"
+                android:text="银行卡号"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                />
+            <TextView
+                android:id="@+id/tv_cardNo"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:text="6217831203128765"
+                android:gravity="center_vertical|right"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/default_margin"
+                android:textColor="@color/color_font"
+                android:textSize="@dimen/font_size_default"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout style="@style/style_edit_layout">
+
+            <TextView
+                style="@style/style_text_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="身份证号码" />
+
+            <EditText
+                android:id="@+id/et_cradNo"
+                style="@style/style_edit_item"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:hint="请输入身份证号码" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_edit_layout">
+
+            <TextView
+                style="@style/style_text_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/et_Mobile"
+                style="@style/style_edit_item"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:inputType="phone"
+                android:hint="请输入手机号码" />
+
+        </LinearLayout>
+    <LinearLayout style="@style/style_edit_layout">
+
+        <TextView
+            style="@style/style_text_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="有效期" />
+
+        <EditText
+            android:id="@+id/et_period"
+            style="@style/style_edit_item"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:hint="有效期限" />
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/style_edit_layout">
+
+        <TextView
+            style="@style/style_text_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="CVV" />
+
+        <EditText
+            android:id="@+id/et_cvv"
+            style="@style/style_edit_item"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:digits="0123456789"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/auth_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/default_margin"
+            >
+            <CheckBox
+                android:id="@+id/cb_select_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                />
+
+            <TextView
+                android:id="@+id/tv_selector_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/default_height"
+                android:text="同意协议"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_default"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:textColor="@color/LKblue"
+                />
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_protocol_next"
+        style="@style/style_btn"
+        android:layout_marginTop="@dimen/default_height"
+        android:text="@string/next"
+        android:layout_margin="@dimen/default_margin"
+
+        />
+</LinearLayout>

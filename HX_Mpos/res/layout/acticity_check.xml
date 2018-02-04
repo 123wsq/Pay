@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.td.app.pay.hx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ <include layout="@layout/layout_title"/>
+    
+    <Button
+        android:id="@+id/btnBT"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_next_normal"
+        android:text="搜索蓝牙设备"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+     <ProgressBar
+        android:id="@+id/progressBar1_"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"
+        android:indeterminateDrawable="@drawable/progressxml" 
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_anim_scanbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/line_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/lightgray"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_indicator_BTPOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1dp"
+        android:listSelector="#00FFFFFF"
+        android:scrollbars="none" >
+    </ListView>
+
+    <View
+        android:id="@+id/line_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/lightgray"
+        android:visibility="gone" />
+
+</LinearLayout>

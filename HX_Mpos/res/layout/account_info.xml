@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" >
+    </include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_account_balances"
+               
+                 />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background_reg"
+                android:orientation="vertical"
+                 android:layout_marginTop="@dimen/default_padding"
+                android:padding="10.0dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="32.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/client_recharge_card_info_confirm"
+                        android:textColor="@color/LKblue"
+                        android:textSize="@dimen/small"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_check_info"
+                        android:textColor="@color/textblack"
+                        android:textSize="@dimen/small" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/lightgray" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="手机号码:"
+                        android:textColor="@color/darkgray"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/tv_info_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7.0dip"
+                        android:gravity="right"
+                        android:textSize="@dimen/medium" />
+                </LinearLayout>
+
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="商户编号:"
+                        android:textColor="@color/darkgray"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/tv_agent_Id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7.0dip"
+                        android:gravity="right"
+                        android:textSize="@dimen/medium" />
+                </LinearLayout>
+                
+               
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="开户姓名:"
+                        android:textColor="@color/darkgray"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/tv_info_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7.0dip"
+                        android:gravity="right"
+                        android:textSize="@dimen/medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="开户银行:"
+                        android:textColor="@color/darkgray"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/tv_info_bank_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7.0dip"
+                        android:gravity="right"
+                        android:textSize="@dimen/medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="银行卡号:"
+                        android:textColor="@color/darkgray"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/tv_info_bcno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7.0dip"
+                        android:gravity="right"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16.0dip" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/lightgray" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:text="@string/account_tip"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/micro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/accnount_info_confirm_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/reg_btn_next_height"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_next_normal"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

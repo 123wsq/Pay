@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/style_edit_layout">
+
+            <TextView
+                style="@style/style_text_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/phone_number" />
+
+            <EditText
+                android:id="@+id/et_mobile_verify_phone"
+                style="@style/style_edit_item"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:hint="@string/hintPhonenumber"
+                android:inputType="phone"
+                android:maxLength="11"
+                 />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/style_edit_layout">
+
+            <TextView
+                style="@style/style_text_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/confirmationCode" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="@dimen/default_height"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/default_margin"
+                android:gravity="center_vertical"
+                >
+            <EditText
+                android:id="@+id/et_mobile_verify_phoneverify"
+                style="@style/style_edit_item"
+                android:layout_width="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="@string/hintInputCode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="@color/grayline" />
+
+            <Button
+                android:id="@+id/btn_mobile_verify_getverify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_next_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/getConfirmationCode"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_my_bank_card_add_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/agree"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_mobile_verify_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务协议"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_mobile_verify_next_step"
+        style="@style/style_btn"
+        android:layout_marginTop="@dimen/default_height"
+        android:text="@string/next" />
+
+</LinearLayout>
+

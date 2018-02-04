@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/default_height"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_background_reg"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:padding="5dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangular_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dip" >
+
+                        <ImageView
+                            android:id="@+id/btn_hold_bca_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_add_id_card" />
+
+                        <TextView
+                            style="@style/btn_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_back"
+                            android:text="手持 身份证正面"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangular_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dip" >
+
+                        <ImageView
+                            android:id="@+id/btn_bca_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_add_id_card" />
+
+                        <TextView
+                            style="@style/btn_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_back"
+                            android:text="身份证正面"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hold_layoyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangular_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dip" >
+
+                        <ImageView
+                            android:id="@+id/btn_bca_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_add_id_card" />
+
+                        <TextView
+                            style="@style/btn_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_back"
+                            android:gravity="center"
+                            android:text="身份证反面"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangular_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dip"
+                        android:visibility="invisible" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_add_id_card" />
+
+                        <TextView
+                            style="@style/btn_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_back"
+                            android:gravity="center"
+                            android:text="银行卡反面"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_name"
+                    style="@style/style_edit_layout" >
+
+                    <TextView
+                        style="@style/style_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="姓名"
+                         />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/style_edit_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:hint="请输入真实姓名"
+                        android:maxLength="8"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_edit_layout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="银行卡"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_cradNo"
+                        style="@style/textView_check_style"
+                        android:background="@drawable/selector_input_reg"
+                        android:hint="请输入银行卡号"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_idcard"
+                    style="@style/style_edit_layout" >
+
+                    <TextView
+                        style="@style/style_text_item"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:text="身份证号"
+                         />
+
+                    <EditText
+                        android:id="@+id/editTxtID"
+                        style="@style/style_edit_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:hint="请输入身份证号"
+                        android:maxLength="20"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_paymentPassword"
+                    style="@style/style_edit_layout"
+                    >
+
+                    <TextView
+                        
+                        style="@style/style_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="支付密码"
+                        />
+
+                    <EditText
+                        android:inputType="textPassword"
+                        android:id="@+id/et_payPassword"
+                        style="@style/style_edit_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:hint="请输入支付密码"
+                        android:maxLength="15"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_email"
+                    style="@style/style_edit_layout"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/style_text_item"
+                        android:text="邮箱"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        style="@style/style_edit_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:hint="请输入邮箱"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_edit_layout"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/cityIdTxt"
+                        style="@style/style_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="所在城市"
+                        />
+                    <LinearLayout
+                        android:id="@+id/recruitmentReLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="@dimen/default_height"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_province"
+                                style="@style/style_text_item"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:hint="请点击选择 （省 市/区)" />
+
+                            <TextView
+                                android:hint=""
+                                android:id="@+id/txt_city"
+                                style="@style/style_text_item"
+                                android:layout_width="wrap_content"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right_arrow_skb" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_bca_next"
+                style="@style/style_btn"
+                android:text="@string/next"
+                android:layout_marginTop="@dimen/default_height"
+                android:layout_marginBottom="@dimen/default_height"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

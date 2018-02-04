@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.td.app.pay.hx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+   <include layout="@layout/layout_title"/>
+	 <LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:orientation="vertical">
+		 <LinearLayout 
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="vertical">
+		     <TextView 
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:padding="10dp"
+			     android:text="当前设备"
+			     android:textSize="16sp"/>	     
+		     <View
+				android:layout_width="fill_parent"
+			    android:layout_height="0.1dp"
+				style="@style/common_line_horizontal_style" />
+		     <TextView 
+		         android:id="@+id/equ_man_current_text"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:padding="20dp"
+			     android:text="无"
+			     android:background="@color/white"
+			     android:textColor="@color/orange"
+			     android:textSize="16sp"/>
+		     <View
+				android:layout_width="fill_parent"
+			    android:layout_height="0.1dp"
+				style="@style/common_line_horizontal_style" />
+		 </LinearLayout>
+		 <RelativeLayout 
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:padding="10dp">
+		         <TextView 
+				     android:layout_width="match_parent"
+				     android:layout_height="wrap_content"
+				     android:text="设备列表"
+				     android:textSize="16sp"/>
+		         <ProgressBar
+	                android:id="@+id/equ_man_progressbar"
+	                style="?android:attr/progressBarStyleInverse"
+	                android:layout_width="25.0dip"
+	                android:layout_height="25.0dip"
+	                android:layout_alignParentRight="true"
+	                android:visibility="gone" />
+		     </RelativeLayout>
+		    
+		 <LinearLayout 
+		     android:layout_width="match_parent"
+		     android:layout_height="match_parent"
+		     android:background="@drawable/corners_bg"
+		     android:padding="10dp"
+		     android:orientation="vertical">
+	     <ListView
+	         android:id="@+id/equ_man_listview"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:scrollbars="none"
+	         android:layout_weight="1" >
+	     </ListView>
+	     <Button 
+            android:id="@+id/equ_man_stop_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_nextstep"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="停止搜索"/>
+	    </LinearLayout> 
+	 </LinearLayout>
+</LinearLayout>
+
+

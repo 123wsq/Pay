@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background_reg"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_balance_auditing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="可提余额"
+                android:textSize="@dimen/font_size_default" />
+
+            <TextView
+                android:id="@+id/tv_balance_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textSize="@dimen/font_size_default" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="刷卡收款账户" />
+
+                    <TextView
+                        android:id="@+id/tv_card_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/default_margin"
+                        android:text="0"
+                        android:drawableRight="@drawable/image_amount_min"
+                        android:textSize="@dimen/font_min_size" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="扫码收款账户" />
+
+                    <TextView
+                        android:id="@+id/tv_scan_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/default_margin"
+                        android:text="0"
+                        android:drawableRight="@drawable/image_amount_min"
+                        android:textSize="@dimen/font_min_size" />
+                </LinearLayout>
+
+                <include layout="@layout/layout_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="快捷收款账户" />
+
+                    <TextView
+                        android:id="@+id/tv_quick_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/default_margin"
+                        android:text="0"
+                        android:drawableRight="@drawable/image_amount_min"
+                        android:textSize="@dimen/font_min_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_height"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cb_account_card"
+                        android:layout_width="@dimen/default_item"
+                        android:layout_height="@dimen/default_item"
+                        android:background="@drawable/shape_radio_button"
+                        android:button="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_line_r" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_height"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cb_account_scran"
+                        android:layout_width="@dimen/default_item"
+                        android:layout_height="@dimen/default_item"
+                        android:background="@drawable/shape_radio_button"
+                        android:button="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_line_r" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_height"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cb_account_quick"
+                        android:layout_width="@dimen/default_item"
+                        android:layout_height="@dimen/default_item"
+                        android:background="@drawable/shape_radio_button"
+                        android:button="@null" />
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

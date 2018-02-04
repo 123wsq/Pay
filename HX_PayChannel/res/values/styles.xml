@@ -1,0 +1,64 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="title_style_normal">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="style_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_height</item>
+        <item name="android:background">@drawable/selector_next_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_btn_size</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin</item>
+        <item name="android:layout_marginRight">@dimen/default_margin</item>
+    </style>
+    
+       <style name="style_text_item" parent="style_btn">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/color_font_item</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">@dimen/font_size_default</item>
+    </style>
+    <style name="style_edit_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/default_item_margin_top</item>
+        <item name="android:paddingLeft">@dimen/default_margin</item>
+        <item name="android:paddingRight">@dimen/default_margin</item>
+    </style>
+
+    <style name="style_edit_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_item_edit_height</item>
+        <item name="android:background">@drawable/shape_edit_solid</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">@dimen/default_margin</item>
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:paddingLeft">@dimen/default_margin</item>
+
+    </style>
+
+</resources>

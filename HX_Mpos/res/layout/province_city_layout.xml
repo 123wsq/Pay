@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dip"
+    android:background="@drawable/corners_bj"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="请选择"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@color/brown" />
+
+    <ListView
+        android:id="@+id/provinceListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#88000000"
+        android:divider="@color/black"
+        android:dividerHeight="0.5dip"
+        android:scrollbars="none" />
+
+</LinearLayout>

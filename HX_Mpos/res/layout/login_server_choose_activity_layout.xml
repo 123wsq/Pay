@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+	<EditText 
+	    android:id="@+id/ed_ip"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:text="请输入地址"
+	    android:textColor="@color/gray"
+	    />
+	<Button 
+	    android:id="@+id/btn_url"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	     android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:text="确定"
+	    android:textSize="20sp"
+	    android:background="@color/red"
+	    android:textColor="@color/white"/>
+</LinearLayout>

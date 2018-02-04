@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title"></include>
+
+    <ListView
+        android:id="@+id/equ_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+    >
+    </ListView>
+
+    <Button
+        android:id="@+id/equ_list_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_btn_next_height"
+        android:layout_margin="15dp"
+        android:background="@drawable/selector_next_normal"
+        android:gravity="center"
+        android:text="绑定设备"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large" />
+
+    <!-- <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+               android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备注：" />
+
+        <TextView
+            android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t商户365天内使用A费率和线上支付刷卡达到30万，系统返还设备押金。" />
+    </LinearLayout> -->
+
+</LinearLayout>

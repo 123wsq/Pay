@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp" >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_login_layout"
+        android:layout_margin="@dimen/default_margin"
+        android:padding="@dimen/default_shape_stroke_width"
+
+       >
+
+        <LinearLayout
+            style="@style/style_edit_layout"
+            android:layout_marginTop="@dimen/default_margin"
+            >
+
+
+            <EditText
+                android:id="@+id/et_login_username"
+                style="@style/style_edit_item"
+                android:gravity="left|center_vertical"
+                android:focusableInTouchMode="true"
+                android:hint="@string/login_username_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="@color/grayline" >
+            </EditText>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"
+
+            />
+
+        <LinearLayout
+            style="@style/style_edit_layout"
+            android:layout_marginBottom="@dimen/default_margin"
+            >
+
+        <EditText
+            android:id="@+id/et_login_pwd"
+            style="@style/style_edit_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:hint="@string/login_pwd_hint"
+            android:imeActionLabel="@string/login"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:text=""
+            android:textColorHint="@color/grayline" />
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                style="@style/style_text_item"
+                android:layout_width="wrap_content"
+                android:gravity="right|center_vertical"
+                android:text="忘记密码？"
+                android:textColor="@color/LKblue"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <CheckBox
+            android:id="@+id/remember_account_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/remember_account"
+            android:visibility="gone"
+            android:textColor="@color/LKblue"
+            android:textSize="@dimen/medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/style_btn"
+            android:text="@string/login"
+             />
+        <Button
+            android:id="@+id/login_register"
+            style="@style/style_btn"
+            android:text="注册"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/default_item_margin_top"
+            android:textColor="@color/btn_blue_normal"
+            android:textSize="@dimen/large" />
+    </LinearLayout>
+
+
+</LinearLayout>

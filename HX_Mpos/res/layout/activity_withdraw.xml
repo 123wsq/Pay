@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    >
+
+    <include layout="@layout/layout_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:background="#009688"
+            android:id="@+id/tv_wd_t1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="一般提现" />
+
+        <TextView
+            android:id="@+id/tv_wd_t0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="快速提现" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_wd_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="提现金额" />
+
+    <EditText
+        android:id="@+id/et_wd_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="银行卡号" />
+
+    <Button
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_next_normal"
+        android:id="@+id/btn_wd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+
+</LinearLayout>

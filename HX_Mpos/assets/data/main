@@ -1,0 +1,110 @@
+{
+    "data":[
+        {
+            "id": "1",
+            "name": "手机收款",
+            "state": "true",
+            "url": "assets://image/a1.png",
+            "enable":"true"
+        },
+        {
+            "id": "2",
+            "name": "实时提现",
+            "state": "true",
+            "url": "assets://image/a2.png",
+            "enable":"true"
+        },
+        {
+            "id": "3",
+            "name": "手机充值",
+            "state": "true",
+            "url": "assets://image/a4.png",
+            "enable":"false"
+        },
+        {
+            "id": "4",
+            "name": "信用卡还款",
+            "state": "true",
+            "url": "assets://image/a6.png",
+            "enable":"false"
+        },
+        {
+            "id": "5",
+            "name": "余额查询",
+            "state": "true",
+            "url": "assets://image/a3.png",
+            "enable":"true"
+        },
+        {
+            "id": "6",
+            "name": "生活缴费",
+            "state": "true",
+            "url": "assets://image/a11.png",
+            "enable":"false"
+        },
+        {
+            "id": "7",
+            "name": "微汇鑫",
+            "state": "false",
+            "url": "assets://image/a8.png",
+            "enable":"false"
+        },
+        {
+            "id": "8",
+            "name": "商旅助手",
+            "state": "false",
+            "url": "assets://image/a10.png",
+            "enable":"false"
+        },
+        {
+            "id": "9",
+            "name": "商城购物",
+            "state": "true",
+            "url": "assets://image/shopping.png",
+            "enable":"false"
+        },
+        {
+            "id": "10",
+            "name": "汇鑫贷",
+            "state": "false",
+            "url": "assets://image/a7.png",
+            "enable":"false"
+        },
+        {
+            "id": "11",
+            "name": "转账",
+            "state": "false",
+            "url": "assets://image/not_use.png",
+            "enable":"false"
+        },
+        {
+            "id": "12",
+            "name": "及时到账",
+            "state": "false",
+            "url": "assets://image/not_use.png",
+            "enable":"false"
+        },
+        {
+            "id":"13",
+            "name":"快捷支付",
+            "state":"true",
+            "url":"assets://image/quick_pay.png",
+            "enable":"true"
+        },
+        {
+            "id":"14",
+            "name":"扫码支付",
+            "state":"true",
+            "url":"assets://image/qr_code_pay.png",
+            "enable":"true"
+        },
+        {
+            "id":"15",
+            "name":"扫一扫",
+            "state":"true",
+            "url":"assets://image/qr_scan.png",
+            "enable":"true"
+        }
+        
+    ]
+}

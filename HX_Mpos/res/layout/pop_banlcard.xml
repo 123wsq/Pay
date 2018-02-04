@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/popupwindow_bg_up_right_unselected"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/tv_bc_default"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="设为默认"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        style="@style/common_line_vertical_style"
+        android:layout_width="0.5dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/tv_bc_unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:text="解绑"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

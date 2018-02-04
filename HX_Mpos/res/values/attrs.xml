@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="titleContent" format="string" />
+    </declare-styleable>
+    
+   
+    
+    
+
+   
+
+    
+    <string-array name="help_list">
+        <item>商户收款</item>
+        <item>撤销交易</item>
+        <item>信用卡还款</item>
+        <item>转账汇款</item>
+        <item>产品适配</item>
+        <item>产品链接</item>
+        <item>注册开通</item>
+        <item>关于刷卡</item>
+        <item>交易安全</item>
+        <item>资料审核与修改</item>
+        <item>商户级别升级</item>
+        <item>关于售后</item>
+    </string-array>
+    <string-array name="question_one_q">
+        <item>Q：在收款完成后，会向付款人发送短信通知，需要商家承担费用吗？</item>
+        <item>Q：汇鑫支付收款有地域限制吗，全国都能用吗？</item>
+        <item>Q：汇鑫支付刷自己信用卡给自己银行借记卡收款可以吗？</item>
+        <item>Q：汇鑫支付的收的钱都到哪里去了？</item>
+        <item>Q：收款金额结算有最低金额要求吗？</item>
+        <item>Q：商户收款后，多长时间进行结算？</item>
+        <item>Q：汇鑫支付收款，手续费怎么收？</item>
+        <item>Q：收款金额与手续费有最低金额要求吗？</item>
+        <item>Q：汇鑫支付刷信用卡每笔收费最低和最高分别是多少，有无封顶？</item>
+        <item>Q：手机汇鑫支付的费率是收取谁的钱？</item>
+        <item>Q：汇鑫支付刷信用卡有积分吗？</item>
+        <item>Q：汇鑫支付收款刷信用卡有没有次数限制？</item>
+        <item>Q：电子签名需要注意哪些事项？</item>
+        <item>Q：汇鑫支付电子签名哪里能查到？</item>
+    </string-array>
+    <string-array name="question_one_a" formatted="false">
+        <item>A：无需商家承担任何费用，我们会免费向付款人发送相关短信。</item>
+        <item>A：汇鑫支付可全国移动收款，不受地域限制。</item>
+        <item>A：汇鑫支付适合的人群是有收单需求，但受客观条件限制无法办理常规POS机的小微商户及个人收款需求者，主要用途是用来收款，不支持商户自己名下的银行卡刷卡交易。</item>
+        <item>A：您开通汇鑫支付业务时，提交的银行账号中。</item>
+        <item>A：起结金额暂定100元，达不到起结金额的，下月初结算上月资金。</item>
+        <item>A：第二个工作日进行结算。商户资金快速回款。汇鑫支付与传统pos机一样，都是通过银联渠道进行清算，资金绝对的安全。</item>
+        <item>A：手机汇鑫支付的费率为：信用卡：1%；借记卡：0.5%。</item>
+        <item>A：收款金额和手续费都没有最低金额要求。</item>
+        <item>A：汇鑫支付目前的费率规则是借记卡0.5%，信用卡1%，无封顶。后续会随着业务运营可能随时调整规则。</item>
+        <item>A：汇鑫支付是收取商户的费用。</item>
+        <item>A：信用卡刷卡有没有积分与任何POS机均无关联，与持卡有关，它是银行为鼓励持卡人特定消费用卡或使用有关产品并符合奖励条件而额外计算的积分，建议您咨询信用卡的发卡行。</item>
+        <item>A：通过手机汇鑫支付收款是没有次数限制的，但是会有额度的限制。</item>
+        <item>A：需持卡人亲自在签名区域签字。请持卡人将姓名签写完整。\n
+            商户应根据银行卡背面签字笔迹与电子签名笔迹进行比对，确认是否无误。\n
+            如发现签名有误，持卡人需重新签名。\n
+            商户与持卡人确认签名无误后，请点击“完成”按钮。 </item>
+        <item>A：商户和持卡人均可通过热线查询电子凭证。</item>
+    </string-array>
+    <string-array name="question_two_q">
+        <item>Q：当天的交易可以进行撤销吗？</item>
+        <item>Q：手机汇鑫支付支持对什么类型的银行卡进行撤销交易？</item>
+        <item>Q：撤销交易会收取商户手续费吗？</item>
+        <item>Q：撤销交易成功后，退款何时返还至付款人的银行卡上呢？</item>
+        <item>Q：撤销交易时，所刷银行卡是商家的还是付款人的？</item>
+    </string-array>
+    <string-array name="question_two_a">
+        <item>A：当天23点之前的交易，都可以轻松快捷的完成撤销。</item>
+        <item>A：目前支持带有银联标识的磁条卡与IC卡（包含信用卡与借记卡）,境外及港澳台除外。</item>
+        <item>A：无任何手续费。</item>
+        <item>A：正常情况下，退款可即时返还至付款人的银行卡上。</item>
+        <item>A：撤销交易需要付款人刷银行卡（消费时刷的银行卡）。</item>
+    </string-array>
+    <string-array name="question_three_q">
+        <item>Q：目前支持哪些银行的信用卡还款业务？</item>
+        <item>Q：为信用卡还款有限额吗？</item>
+        <item>Q：多长时间可以恢复额度？</item>
+        <item>Q：商户在哪里可以看到额度恢复时间？</item>
+        <item>Q：跨行异地还款，有时间及地点限制吗？</item>
+        <item>Q：为信用卡还款手续费多少？</item>
+        <item>Q：为信用卡还款有短信通知吗？</item>
+        <item>Q：如何更加快速的用手机汇鑫支付为信用卡还款？</item>
+    </string-array>
+    <string-array name="question_three_a">
+        <item>A：手机汇鑫支付目前支持例如中国，农业，工商，建设，交通，招商，民生，广发等全国30家主流银行的信用卡还款业务。</item>
+        <item>A：每月有笔数及还款金额的限额，具体限额请以客户端提示为准。</item>
+        <item>A：19家银行可达到实时恢复额度，具体请以客户端提示为准。</item>
+        <item>A：商户在填写还款信息时，客户端会提示额度恢复参考时间。</item>
+        <item>A：没有时间和地点限制，只要您的手机可以正常联网，即刻体验随时随地还款的便利。</item>
+        <item>A：除部分银行收取2元手续费，其他主流银行均无手续费。具体资费请以客户端提示为准。 </item>
+        <item>A：商户在填写还款信息时，可填写持卡人手机号码，将免费短信通知持卡人。</item>
+        <item>A：商户在填写还款信息时，可通过“历史”选择以前成功还款的银行卡，无需填写，快速还款。</item>
+    </string-array>
+    <string-array name="question_four_q">
+        <item>Q：转账汇款手续费是多少？</item>
+        <item>Q：转账汇款什么时间可以到账？</item>
+        <item>Q：如何更加快速的用手机汇鑫支付进行转账汇款？</item>
+        <item>Q：转账汇款完成后可以给对方发送通知吗？</item>
+    </string-array>
+    <string-array name="question_four_a">
+        <item>A：若您选择快速到账，手续费0.3%，2元起10元封顶。</item>
+        <item>A：两种到账方式：快速到账或实时到账。我们所熟悉的五大国有银行目前都支持实时到账模式，与众多银行合作，未来将会有更多银行也支持实时到账模式。新增功能后可永久免费升级。</item>
+        <item>A：商户在填写还款信息时，可通过“常用”选择历史转出卡，无需填写，快速还款。</item>
+        <item>A：可以。支付前您可在客户端上填写对方手机号。我们会帮您免费向对方发送通知短信。</item>
+    </string-array>
+    <string-array name="question_five_q">
+        <item>Q：汇鑫支付支持哪些机型？</item>
+        <item>Q：汇鑫支付支持哪些手机系统？</item>
+    </string-array>
+    <string-array name="question_five_a">
+        <item>A：安卓系统支持手机机型——包括三星、小米、联想等搭载安卓系统平台的多种主流机型。 iOS系统支持手机机型——包括iphone4s及以上机型，ios版本需高于或等于6.0版本。 适配机型详表请参见官方网站。</item>
+        <item>A：手机汇鑫支付支持Android和IOS智能手机系统，详情可参考如下：\n
+安卓系统：包括三星、小米、联想等搭载安卓系统平台的多种主流机型。\n
+iOS系统：包括iPhone iOS6.0以上系统机型。\n
+适配机型详表请参见官方网站。</item>
+    </string-array>
+    <string-array name="question_six_q">
+        <item>Q：手机汇鑫支付与手机连接的最远距离是多少？</item>
+        <item>Q：商户的手机如何连接手机汇鑫支付？</item>
+        <item>Q：手机汇鑫支付在充满电的情况下一般可以工作多少时间？</item>
+        <item>Q：手机汇鑫支付有节电功能吗？</item>
+        <item>Q：充满电情况下，手机汇鑫支付可以做多少笔交易？</item>
+    </string-array>
+    <string-array name="question_six_a">
+        <item>A：在没有明显障碍物的情况下，产品与手机成功连接的最远距离可达6米左右。无线连接，方便快捷。</item>
+        <item>A：首先开启手机蓝牙功能，在您使用汇鑫支付客户端进行刷卡时，客户端自动识别手机汇鑫支付名称，连接该设备。蓝牙连接，让您摆脱连接线的束缚。</item>
+        <item>A：经测试，待机条件下手机汇鑫支付可工作8小时左右。</item>
+        <item>A：为了您更好的使用手机汇鑫支付，我们设置了相应功能：无操作条件下5秒背景灯关闭，30秒进入节电模式，5分钟无操作自动关机。</item>
+        <item>A：可以完成刷磁条卡500余笔，插入IC卡200余笔。</item>
+    </string-array>
+    <string-array name="question_seven_q">
+        <item>Q：一个手机号码可以开通多个汇鑫支付吗？</item>
+        <item>Q：同一个身份证号，同一个银行账户开通多个汇鑫支付账号？</item>
+        <item>Q：开通时，除了在客户端内提交资料外，还需要其他操作吗？</item>
+        <item>Q：若用户已有手机刷卡器客户端的账号，是否可以直接登录汇鑫支付客户端？</item>
+        <item>Q：若商户拥有多个汇鑫支付，是否可以用同一个身份证号与银行卡进行开通？</item>
+        <item>Q：商户使用中，是否可以修改收款卡号？</item>
+        <item>Q：若商户拥有一个汇鑫支付，是否可以在不同的智能手机上使用？</item>
+    </string-array>
+    <string-array name="question_seven_a">
+        <item>A：账户支持一个手机号码开通多个机器，您可放心使用。</item>
+        <item>A：可以的。需要多个登录帐号。</item>
+        <item>A：不需要其他操作，您可以放心使用。</item>
+        <item>A：可以登录，但需要填写商户身份资料后才可以进行收款。</item>
+        <item>A：可以。</item>
+        <item>A：可以。在商户资料审核通过后，您可以申请修改收款银行卡卡号。</item>
+        <item>A：可以。我们的手机汇鑫支付与手机号绑定，您可以在不同手机上任意使用。</item>
+    </string-array>
+    <string-array name="question_eight_q">
+        <item>Q：所有银行卡都可以在汇鑫支付上使用吗？</item>
+        <item>Q：刷磁条卡无法识别，是什么原因？</item>
+        <item>Q：无法读取IC卡信息，怎么办？</item>
+    </string-array>
+    <string-array name="question_eight_a">
+        <item>A：汇鑫支付目前接受符合银联标准的所有借记卡和信用卡，暂不支持不具有银联标识的银行卡或境外卡（包含港澳台）。</item>
+        <item>A：请从磁卡顶端开始刷，不要从中间开始刷；\n
+刷卡时稍向下用力，让卡尽量贴着卡槽底部划过，不要悬空而刷；\n
+刷卡结束前不要翘起银行卡；\n
+银行卡磁条表面附有杂质，请清除后重试；\n
+请您确认是否是磁条卡本身损坏。</item>
+        <item>A：请您检查IC卡插入的方向是否正确，应银行卡面朝上；IC卡上的读卡金属触点表面附有杂质，请清除后重试；请您确认是否是IC卡本身损坏。</item>
+    </string-array>
+    <string-array name="question_nine_q">
+        <item>Q：手机汇鑫支付有相关的认证吗？</item>
+        <item>Q：手机汇鑫支付交易安全吗？</item>
+    </string-array>
+    <string-array name="question_nine_a">
+        <item>A：手机汇鑫支付产品通过了人民银行、银联的多项认证，，符合POS产品认证规定。您可以放心使用。</item>
+        <item>A：汇鑫支付从以下几个方面保证收款交易安全：\n
+软件加密+硬件加密的双重保障、双向认证；
+产品具备国家级标准认证；\n
+一机一密；\n
+具有拆机自毁和数据销毁功能，机身任何一个部位被拆动，所有功能都会自动停止工作；一旦有修改数据的操作，所有数据都会自动销毁。</item>
+    </string-array>
+    <string-array name="question_ten_q">
+        <item>Q：商户提交完相关资料后，还需其他操作吗？</item>
+        <item>Q：资料审核时间一般是多长时间？</item>
+        <item>Q：资料未审核通过后，会以什么形式通知商户？</item>
+        <item>Q：商户如何修改资料？</item>
+    </string-array>
+    <string-array name="question_ten_a">
+        <item>A：不需要其他操作，等待审核结果即可。</item>
+        <item>A：3个工作日（周末，法定节假日顺延）</item>
+        <item>A：会以短信形式告知商户，商户可在客户端内进行资料修改后再次提交。</item>
+        <item>A：第一步.商户致电客服400-400-4000；客服坐席将申请表格发送至商户邮箱。\n
+第二步.商户将需要提交的内容发至tangdi@tangdi.com\n
+第三步.修改审核时间为3个工作日。商户可通过客户端"商户信息"进行查看。</item>
+    </string-array>
+    <string-array name="question_eleven_q">
+        <item>Q：收款额度不够怎么办？</item>
+        <item>Q：商户申请升级需要提交什么资料？</item>
+    </string-array>
+    <string-array name="question_eleven_a">
+        <item>A：满足条件的商户（基础资料已审核通过，且至少有一次成功结算的入账），可申请升级商户级别。步骤为：\n
+第一步.商户致电客服400-663-6369；\n
+第二步.客服坐席会将需要提交的相关资料告知商户。\n
+第三步.商户将相关资料上传至指定邮箱。\n
+第四步.商户等待审核通知。</item>
+        <item>A：已办理营业执照，在工商部门注册的商户需提交：营业执照复印件；门店照片：门头照（显示店头门牌）、店内照（显示主营）、收银台照片；法人身份证照片正、反面；法人持证照（身份证正面，能清晰辨别本人影像与证件显示图像一致）；营业场所产权证明或者租赁证明\n
+无执照个体商户需提交：法人身份证照片正、反面 ；法人持证照（身份证正面，能清晰辨别本人影像与证件显示图像一致）</item>
+    </string-array>
+    <string-array name="question_twelve_q">
+        <item>Q：汇鑫支付保修政策</item>
+        <item>Q：汇鑫支付退换货政策</item>
+        <item>Q：以下情况下不提供退货服务</item>
+        <item>Q：汇鑫支付售后服务电话</item>
+        <item></item>
+    </string-array>
+    <string-array name="question_twelve_a">
+        <item>A：汇鑫支付设备免费保修一年（人为因素造成的产品损坏除外）。</item>
+        <item>A：便利特惠根据商品类别不同，为客户提供相关的退货服务，多数商品提供自收货之日起7天内退货的服务，部分特殊商品不提供退换货服务。\n
+退货的商品需确保商品的完整性，保证商品原质原样，并与附带品、赠品、发票等一同发回。 因商品本身质量问题退换货的运费由承担，因人为问题退换货的运费由客户承担。</item>
+        <item>A：正常使用过的商品，没有质量问题。\n
+任何因非正常使用及保管导致出现质量问题的商品。\n
+商品包装不全，部分配件丢失 </item>
+        <item>A：手机银行业务相关问题（还款、转账、充值、查余额），请联系售后热线：400-400-4000；\n
+手机收款业务相关问题（收款、撤销、查交易），请联系售后热线：400-400-4000。</item>
+    </string-array>
+
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    
+
+</resources>

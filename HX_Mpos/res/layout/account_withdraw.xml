@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_account_balance_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@drawable/white_background_reg"
+                android:orientation="vertical"
+                android:padding="@dimen/default_margin" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/bank_card_no" />
+
+                    <TextView
+                        android:id="@+id/tv_account_withdraw_bank_card_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical|right"
+                        android:text="1111" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="银行卡" />
+
+                    <EditText
+                        android:id="@+id/et_account_withdraw_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@color/transparent"
+                        android:editable="false"
+                        android:gravity="right|center_vertical"
+                        android:hint="--"
+                        android:singleLine="true" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/withdrawal" />
+
+                    <EditText
+                        android:id="@+id/et_account_withdraw_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入提现金额"
+                        android:inputType="numberDecimal"
+                        android:maxLength="9"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/pay_password" />
+
+                    <EditText
+                        android:id="@+id/et_account_withdraw_pay_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入支付密码"
+                        android:password="true"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                     android:visibility="gone"
+                     >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="手续费" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                       
+                         >
+
+                        <TextView
+                            android:id="@+id/tv_loan_money"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="￥0.00"
+                            android:textColor="@color/orange" />
+
+                        <Button
+                            android:id="@+id/btn_wd_calfee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/selector_next_normal"
+                            android:paddingLeft="@dimen/default_padding"
+                            android:paddingRight="@dimen/default_padding"
+                            android:text="计算手续费"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_edit_layout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/style_text_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/transfer_remarks" />
+
+                    <EditText
+                        android:id="@+id/et_account_withdraw_explain"
+                        style="@style/style_edit_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:hint="@string/withdraw_explain"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_account_withdraw_confirm"
+                style="@style/style_btn"
+                android:layout_marginTop="@dimen/default_height"
+                android:text="提 现" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="操作提示："
+                android:textColor="#616161"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="\t1.在（已结算）提款为T+1，无手续费.\n\t2.在（未结算）提款为T+0，手续费0.25%.\n\t3.T+0到账时间为下午3点之前."
+                android:textColor="#616161"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

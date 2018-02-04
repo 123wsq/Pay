@@ -1,0 +1,3 @@
+key store password : lukejun1988
+key password : lukejun1988
+key alias : lulu

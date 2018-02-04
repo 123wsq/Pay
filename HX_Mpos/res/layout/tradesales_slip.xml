@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.td.app.pay.hx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sales_slip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_trade_details_title"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_margin="8dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bank_logo_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="签购单"
+                    android:textColor="@color/textblack"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="持卡人存根\nCARDHOLDER COPY"
+                    android:textColor="@color/textblack"
+                    android:textSize="10.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_trade_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_graybg_normal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="MERCHANT NAME商户名称" />
+
+                    <TextView
+                        android:id="@+id/slip_merchant_name"
+                        style="@style/text_right_style"
+                        android:text="汇鑫商业保理有限公司" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="ORDER NO.\n流水号" />
+
+                    <TextView
+                        android:id="@+id/slip_ord_id"
+                        style="@style/text_right_style"
+                        android:text="32463264326432464" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="MERCHANT NO.\n商户编号" />
+
+                    <TextView
+                        android:id="@+id/slip_merchant_no"
+                        style="@style/text_right_style"
+                        android:text="2432642364" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="TERMINAL ID\n终端编号" />
+
+                    <TextView
+                        android:id="@+id/slip_term_no"
+                        style="@style/text_right_style"
+                        android:text="32532534" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="CARD NO.\n卡号" />
+
+                    <TextView
+                        android:id="@+id/slip_card_no"
+                        style="@style/text_right_style"
+                        android:text="622626****1242" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="PAY TYPE.\n交易类型" />
+
+                    <TextView
+                        android:id="@+id/slip_pay_type"
+                        style="@style/text_right_style"
+                        android:text="扫码" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="DATE/TIME\n日期/时间" />
+
+                    <TextView
+                        android:id="@+id/slip_ord_date"
+                        style="@style/text_right_style"
+                        android:text="2014-10-22 17:22:23" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_left_style"
+                        android:text="AMOUNT\n金额" />
+
+                    <TextView
+                        android:id="@+id/slip_ord_amt"
+                        style="@style/text_right_style"
+                        android:text="32.00元" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/payment_payed" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            style="@style/text_left_style"
+                            android:text="CARDHOLDER SIGNATURE \n持卡人签名" />
+
+                        <ImageView
+                            android:id="@+id/sales_slip_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
